@@ -148,6 +148,8 @@ footer {
   width: 320px;
   background: var(--buttonbgcolor);
   border-radius: 10px;
+  border: none;
+  outline: none;
 
   font-size: 14px;
   line-height: 1.4;
