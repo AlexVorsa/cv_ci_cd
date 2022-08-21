@@ -103,6 +103,8 @@ footer {
   background: #20262e;
   border: 1px solid #30363d;
   border-radius: 5px;
+  border: none;
+  outline: none;
 
   font-size: 14px;
   line-height: 1.4;
