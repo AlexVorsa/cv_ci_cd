@@ -126,6 +126,9 @@ footer {
   width: 320px;
   background: var(--linktext);
   border-radius: 20px;
+  border: none;
+  outline: none;
+  
 
   font-size: 14px;
   line-height: 1.4;
