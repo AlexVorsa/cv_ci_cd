@@ -26,11 +26,7 @@ jobs:
     steps:
       - name: Deploy to production
         run: echo deploying
-  
-  notify:
-    name: tg_notify
-    steps:
-      - name: send telegram message on push
+      - name: Send telegram message on push
         uses: appleboy/telegram-action@master
         with:
           to: ${{ secrets.TG_ID }}
@@ -42,3 +38,5 @@ jobs:
             Repository: ${{ github.repository }}
             
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
+
+      
