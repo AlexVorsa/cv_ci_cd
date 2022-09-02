@@ -1,0 +1,16 @@
+name: Auto PullRequest
+on:
+  pull_request:
+    types: [opened, reopened]
+
+jobs:
+  build:
+    name: CSS lint
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+    - name: CSS lint with stylelint
+      uses: actions-hub/stylelint@master
+      env:        
+        PATTERN: "**/*.css"
