@@ -34,7 +34,7 @@ jobs:
           message: |
             ${{ github.actor }} created commit:
             Commit message: ${{ github.event.commits[0].message }}
-            Pipeline: https://github.com/${{ github.repository }}/actions/${{github.run_id}}            
+            Pipeline: https://github.com/${{ github.repository }}/actions/runs/${{github.run_id}}            
             Repository: ${{ github.repository }}            
             See changes: https://github.com/${{ github.repository }}/commit/${{github.sha}}
 
