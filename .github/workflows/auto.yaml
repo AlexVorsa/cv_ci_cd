@@ -29,8 +29,8 @@ jobs:
       - name: Send telegram message on push
         uses: appleboy/telegram-action@master
         with:
-          to: ${{ secrets.TG_ID }}
-          token: ${{ secrets.TG_TOKEN }}
+          to: ${{ secrets.TEST_TG_ID }}
+          token: ${{ secrets.TEST_TG_TOKEN }}
           message: |
             ${{ github.actor }} created commit:
             Commit message: ${{ github.event.commits[0].message }}
