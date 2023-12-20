@@ -28,6 +28,6 @@ jobs:
       uses: actions/checkout@v4
     - name: Пройти проверки HTML5 Validator
       uses: Cyb3r-Jak3/html5validator-action-experimental@master
-        with:
-          root: /
-        continue-on-error: true
+      with:
+        root: /
+      continue-on-error: true
